@@ -1,0 +1,6 @@
+xr-environments (0.1.0) unstable; urgency=medium
+
+  * Package the final six-view Qingkong panorama and explicit view-space metadata.
+  * Keep environment data independent of Shell/runtime lifecycle.
+
+ -- openKylin XR SIG <xr@lists.openkylin.top>  Tue, 03 Nov 2026 21:57:43 +0800

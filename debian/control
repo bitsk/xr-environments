@@ -1,0 +1,15 @@
+Source: xr-environments
+Section: misc
+Priority: optional
+Maintainer: openKylin XR SIG <xr@lists.openkylin.top>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.7.0
+Rules-Requires-Root: no
+
+Package: xr-environment-qingkong
+Architecture: all
+Depends: ${misc:Depends}
+Description: Qingkong panoramic environment data for UKUI XR
+ Versioned equirectangular artwork and rendering metadata for local
+ UKUI XR desktop development. This data-only package starts no services
+ and does not select or modify an OpenXR runtime.

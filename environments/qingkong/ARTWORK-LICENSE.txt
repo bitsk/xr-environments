@@ -1,0 +1,9 @@
+LicenseRef-Project-Artwork
+
+This is the project-provided Qingkong environment artwork selected for local
+UKUI XR desktop development. The final panorama was assembled from six
+generated directional views. No third-party open artwork license is asserted
+by this package. Original artwork records remain with the project design
+assets; packaging does not assign new copyright or redistribution terms.
+
+Public release licensing for the artwork remains to be specified separately.

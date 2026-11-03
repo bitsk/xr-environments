@@ -1,0 +1,14 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: xr-environments
+
+Files: debian/* README.md AGENTS.md LICENSE.md environments/*/environment.json
+Copyright: See original project contributor and file notices
+License: GPL-3.0-or-later
+ On Debian systems, the full text is available at
+ /usr/share/common-licenses/GPL-3.
+
+Files: environments/*/qingkong-360.png environments/*/ARTWORK-LICENSE.txt
+Copyright: Project-provided artwork; no new copyright assignment asserted
+License: LicenseRef-Project-Artwork
+ Supplied for local project development. No open redistribution license
+ is assigned by this packaging. See the installed ARTWORK-LICENSE.txt.
