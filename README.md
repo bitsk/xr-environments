@@ -1,12 +1,12 @@
 # xr-environments
 
-UKUI XR 的可独立安装环境数据。首个包为 `xr-environment-qingkong`，采用晴空最终版的六方向拼接全景；不重新生成、镜像或拉伸原资产。
+UKUI XR 的可独立安装环境数据。首个包为 `xr-environment-qingkong`，采用六方向原图生成的连续球面晴空全景；逐字节复用设计交付 PNG，不重新生成、镜像、拉伸或二次编码。
 
 ## 构建与文件
 
 ```sh
 dpkg-buildpackage -us -uc -b
-dpkg-deb -x ../xr-environment-qingkong_0.1.0_all.deb /tmp/xr-environment-inspect
+dpkg-deb -x ../xr-environment-qingkong_0.1.1_all.deb /tmp/xr-environment-inspect
 ```
 
 运行时内容安装到 `/usr/share/xr/environments/qingkong/`：
@@ -16,6 +16,12 @@ dpkg-deb -x ../xr-environment-qingkong_0.1.0_all.deb /tmp/xr-environment-inspect
 - `ARTWORK-LICENSE.txt`：美术资产的原有授权边界。
 
 这是 `Architecture: all` 的纯数据包，没有安装脚本、网络下载、服务、自启动、硬件访问或 runtime 默认值修改。包内容可在任何目录解包检查；Shell 实现后通过环境 ID `qingkong` 选择它。
+
+## 当前资产版本
+
+`0.1.1` 使用连续球面方向场进行天空/地面低频色彩归一化，并在线性色彩空间按方向夹角平滑融合；原六方向素材保留在设计资产中。本包仅替换最终 PNG 与版本/摘要，保持 4096×2048、完整经纬投影和原有采样坐标。
+
+导入时已核对 PNG 与设计的 `scene.json` 纹理摘要一致、与 GLB 内嵌 PNG 逐字节相同，并核对六张源图摘要及 `preview-checks.json` 的连续球面处理记录。这些记录属于设计方的桌面预览范围；包构建和摘要检查不代表新版已在 Shell 或头显中验收。旧资产保留在 Git 历史中。
 
 ## 渲染约定
 

@@ -2,13 +2,13 @@
   "schema": "org.openkylin.xr.environment",
   "schema_version": 1,
   "id": "qingkong",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "Qingkong",
   "name_zh_CN": "晴空",
   "kind": "infinite_panorama",
   "texture": {
     "file": "qingkong-360.png",
-    "sha256": "b3a398fe703e6c74cd61cfea7587060094738695eb8c9b6e5e52e9e239254f63",
+    "sha256": "73ad1ce4490fb17505c5ed7c62986a6321de00cf0d736f2864903e418d7f96e8",
     "width": 4096,
     "height": 2048,
     "colour_space": "srgb",
@@ -16,8 +16,14 @@
     "longitude_degrees": 360,
     "latitude_degrees": 180,
     "uv_origin": "top_left",
-    "front_uv": [0.5, 0.5],
-    "right_uv": [0.75, 0.5],
+    "front_uv": [
+      0.5,
+      0.5
+    ],
+    "right_uv": [
+      0.75,
+      0.5
+    ],
     "sampler_u": "repeat",
     "sampler_v": "clamp_to_edge"
   },
@@ -37,7 +43,7 @@
     "has_real_near_geometry": false
   },
   "artwork": {
-    "source_revision": "six-direction-multiview",
+    "source_revision": "six-direction-spherical-angular-blend-low-frequency-normalization",
     "source_direction_count": 6,
     "mirrored_directions": false,
     "license": "LicenseRef-Project-Artwork",
